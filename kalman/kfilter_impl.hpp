@@ -36,10 +36,14 @@ namespace Kalman {
   KFilter<T, BEG, OQ, OVR, DBG>::~KFilter() {}
 
   template<typename T, K_UINT_32 BEG, bool OQ, bool OVR, bool DBG>
-  void KFilter<T, BEG, OQ, OVR, DBG>::makeBaseB() {}
+  void KFilter<T, BEG, OQ, OVR, DBG>::makeBaseB() {
+    NoModification();
+  }
 
   template<typename T, K_UINT_32 BEG, bool OQ, bool OVR, bool DBG>
-  void KFilter<T, BEG, OQ, OVR, DBG>::makeB() {}
+  void KFilter<T, BEG, OQ, OVR, DBG>::makeB() {
+    NoModification();
+  }
 
   template<typename T, K_UINT_32 BEG, bool OQ, bool OVR, bool DBG>
   void KFilter<T, BEG, OQ, OVR, DBG>::makeProcess() {
